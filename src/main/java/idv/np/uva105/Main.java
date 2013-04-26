@@ -23,12 +23,15 @@ public class Main {
         sc.close();
         int maxR = 0;
         int[] data = new int[10000];
+        // init height
         Arrays.fill(data, 0);
         for (int i = 0, size = bds.size(); i < size; i++) {
             int[] bd = bds.get(i);
             for (int j = bd[0]; j < bd[2]; j++) {
+                // update height
                 data[j] = (bd[1] > data[j]) ? bd[1] : data[j];
             }
+            // udpate boundary
             maxR = (bd[2] > maxR) ? bd[2] : maxR;
         }
         StringBuilder builder = new StringBuilder();
