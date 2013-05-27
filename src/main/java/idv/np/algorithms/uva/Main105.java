@@ -1,4 +1,4 @@
-package idv.np.uva;
+package idv.np.algorithms.uva;
 
 import java.util.ArrayList;
 import java.util.Arrays;

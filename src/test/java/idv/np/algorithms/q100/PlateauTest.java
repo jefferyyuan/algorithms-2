@@ -1,4 +1,4 @@
-package idv.np.q100;
+package idv.np.algorithms.q100;
 
 import org.junit.Assert;
 import org.junit.Test;

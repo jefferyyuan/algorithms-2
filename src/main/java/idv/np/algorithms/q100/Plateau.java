@@ -1,4 +1,4 @@
-package idv.np.q100;
+package idv.np.algorithms.q100;
 
 /**
  * User: Nightpig
