@@ -1,17 +1,14 @@
-package idv.np.uva105;
+package idv.np.uva;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
-public class Main {
+public class Main105 {
 
-    /**
-     * @param args
-     */
     public static void main(String[] args) {
-        List<int[]> bds = new ArrayList<int[]>();
+        List<int[]> bds = new ArrayList<>();
         Scanner sc = new Scanner(System.in);
         while (sc.hasNextInt()) {
             int[] bd = new int[3];
@@ -25,8 +22,7 @@ public class Main {
         int[] data = new int[10000];
         // init height
         Arrays.fill(data, 0);
-        for (int i = 0, size = bds.size(); i < size; i++) {
-            int[] bd = bds.get(i);
+        for (int[] bd : bds) {
             for (int j = bd[0]; j < bd[2]; j++) {
                 // update height
                 data[j] = (bd[1] > data[j]) ? bd[1] : data[j];
