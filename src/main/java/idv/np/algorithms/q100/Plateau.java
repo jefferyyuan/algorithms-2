@@ -10,7 +10,7 @@ package idv.np.algorithms.q100;
  */
 public class Plateau {
 
-    public static int plateau1(int[] data) {
+    public static int execute1(int[] data) {
         if (data.length == 0) {
             throw new IllegalArgumentException();
         }
@@ -23,7 +23,7 @@ public class Plateau {
         return length;
     }
 
-    public static int plateau2(int[] data) {
+    public static int execute2(int[] data) {
         if (data.length == 0) {
             throw new IllegalArgumentException();
         }
