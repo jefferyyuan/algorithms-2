@@ -5,6 +5,8 @@ package idv.np.algorithms.q100;
  * User: Nightpig
  * Date: 2013/6/4
  * Time: 下午 11:44
+ * Given two sorted arrays, this function computes the number
+ * of pairs that satisfies a[i] > b[j].
  */
 public class DominanceCount {
 
