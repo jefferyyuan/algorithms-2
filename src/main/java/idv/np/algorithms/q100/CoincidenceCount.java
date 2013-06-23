@@ -1,23 +1,26 @@
 package idv.np.algorithms.q100;
 
 /**
+ * Created with IntelliJ IDEA.
  * User: Nightpig
- * Date: 2013/6/4
- * Time: 下午 11:44
+ * Date: 2013/6/23
+ * Time: 上午 10:17
  * Given two sorted arrays, this function computes the number
- * of pairs that satisfies a[i] > b[j].
+ * of pairs that satisfies a[i] == b[j].
  */
-public class DominanceCount {
+public class CoincidenceCount {
 
     public static int execute(int[] a, int[] b) {
-        int total, i, j;
-        total = i = j = 0;
+        int i = 0, j = 0, total = 0;
         while (i < a.length && j < b.length) {
-            if (a[i] <= b[j]) {
+            if (a[i] > b[j]) {
+                j++;
+            } else if (a[i] < b[j]) {
                 i++;
             } else {
+                i++;
                 j++;
-                total += a.length - i;
+                total++;
             }
         }
         return total;
