@@ -1,7 +1,6 @@
 package idv.np.algorithms.q100;
 
 /**
- * Created with IntelliJ IDEA.
  * User: Nightpig
  * Date: 2013/6/23
  * Time: 上午 10:17
