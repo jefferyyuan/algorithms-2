@@ -18,8 +18,9 @@ public class Armstrong {
             pows[i] = (int) Math.pow(i, n);
         }
         int[] pows10 = new int[n + 1];
-        for (int i = 0; i < pows10.length; i++) {
-            pows10[i] = (int) Math.pow(10, i);
+        pows10[0] = 1;
+        for (int i = 1; i < pows10.length; i++) {
+            pows10[i] = pows10[i - 1] * 10;
         }
         for (int i = pows10[n - 1], end = pows10[pows10.length - 1]; i < end; i++) {
             int sum = 0;
