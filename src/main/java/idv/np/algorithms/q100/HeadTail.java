@@ -5,7 +5,7 @@ package idv.np.algorithms.q100;
  * Date: 2013/6/23
  * Time: 下午 12:50
  * Given an array with positive elements, please counts how
- * many equal prefix and suffix sums there are
+ * many equal prefix and suffix sums there are.
  */
 public class HeadTail {
 
