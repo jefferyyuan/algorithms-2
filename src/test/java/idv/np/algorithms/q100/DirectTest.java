@@ -1,7 +1,8 @@
 package idv.np.algorithms.q100;
 
-import org.junit.Assert;
 import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 /**
  * User: Nightpig
@@ -12,7 +13,7 @@ public class DirectTest {
 
     @Test
     public void execute() {
-        Assert.assertEquals(16, Direct.execute(4).size());
+        assertEquals(16, Direct.execute(4).size());
     }
 
 }
