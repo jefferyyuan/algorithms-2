@@ -7,14 +7,14 @@ import static org.junit.Assert.assertEquals;
 /**
  * User: Nightpig
  * Date: 2013/8/12
- * Time: 下午 2:48
+ * Time: 下午 6:35
  */
-public class MinCoinsTest {
+public class SplitNumberTest {
 
     @Test
     public void execute() {
-        assertEquals(3, MinCoins.execute(11, new int[]{1, 3, 5}));
-        assertEquals(-1, MinCoins.execute(11, new int[]{5, 5, 5}));
+        assertEquals(7, SplitNumber.execute(5));
+        assertEquals(190569292, SplitNumber.execute(100));
     }
 
 }

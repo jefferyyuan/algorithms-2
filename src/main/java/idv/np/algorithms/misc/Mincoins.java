@@ -7,7 +7,7 @@ import java.util.Arrays;
  * Date: 2013/8/12
  * Time: 下午 2:17
  */
-public class Mincoins {
+public class MinCoins {
 
     public static int execute(int money, int[] coins) {
         Arrays.sort(coins);
